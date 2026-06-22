@@ -88,11 +88,11 @@ namespace WebApplication2.Controllers
             string model = insuree.CarModel?.Trim().ToLower() ?? "";
 
             // Check for specific vehicle make/model combinations that incur additional fees
-            if (make == "Porsche")
+            if (make == "porsche")
             {
                 baseQuote += 25m;
 
-                if (model == "911 Carrera")
+                if (model == "911 carrera")
                 {
                     baseQuote += 25m;
                 }
